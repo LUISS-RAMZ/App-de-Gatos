@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <h1>Formularios</h1>
+  </head>
+  
+  <body>
+        <!-- la etiqueta LABEL servira para que el texto tambien active el boton de radio el atributo for es para que tenga interactividad -->
+          <label for="interior">
+            <input id="interior" type="radio" value="interior" name="interior-exterior-encaja">Interior</label><br>
+          <!-- para agrupar los botones de raio y que se logre que solo uno se active se utiliza un ID y el atributo name="" que es el nombre del grupo en este caso fuero 3 botones y se agrupo asi (interior-exterior-encaja) -->
+          <label for="exterior">
+            <input id="exterior" type="radio" value="exterior" name="interior-exterior-encaja">Exterior</label><br>
+            <!-- esta linea de codigo no tiene el label para demostracion -->
+          <input id="encaja" type="radio" value="encaja" name="interior-exterior-encaja">en una caja<br>
+          <!-- este es el grupo de las casillas de verificacion <input type="checkbox"> -->
+          <label for="gp">
+            <input type="checkbox" value="gp" id="gp" name="tamano">gato pequeño</label>
+          <label for="gm">
+            <input type="checkbox" value="gm" id="gm" name="tamano">gato mediano</label>
+          <label for="gg">
+            <input type="checkbox" value="gg" id="gg" name="tamano">gato grande</label>
+        <br>
+        <!-- esto es un foemulario sencillo con envio de respuesta con la etiqueta <form></form> y su atributo action -->
+      <form action="/Enviar-Respuesta">
+        <!-- la etiqueta input se utilza con el type y se le puede agregar un placeholder es como una instruccion dentro (marcador de posicion) para forzar a que se agregue algo y no quede vacio -->
+        <input type="text" placeholder="URL de la foto de tu gato" required>
+        <!-- la opcion required se utilza para pedir que se rellene el campo -->
+        <button type="submit" id="#">Enviar</button>
+      </form>
+      <br></>
+      <img src="https://www.dogalize.com/wp-content/uploads/2017/02/af023f0e-a495-44de-a2b9-ccb0c26c652b.jpg">
+    </main>
+    <footer>
+      <p>sin derechos d autor <a href="https://www.freecodecamp.org/espanol/" target="_blank">https://www.freecodecamp.org/espanol/</a></p>
+    </footer>
+  </body>
+</html>
